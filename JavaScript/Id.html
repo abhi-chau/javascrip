@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function bodyload(){
+        pic.src = "images/Visa-PNG.png";
+        frmRegister.btnRegister.value="Register";
+        frmLogin.btnLogin.value="Login";
+    }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="100" name="pic" height="100" border="2">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            User Name <input type="text"><input type="button" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Your Email <input type="email"> <input type="button" name="btnLogin">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Mfd = new Date();
+        let months = ["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
+        let Weekdays = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        document.write(`
+           Manufacture Date :${Mfd.getDate()}<br>
+           Manufacture Month :${months[Mfd.getMonth()]}<br>
+           Manufacture Weekday :${Weekdays[Mfd.getDay()]}<br>
+           Manufacture Year :${Mfd.getFullYear()}<br>
+           Manufacture Date :${Weekdays[Mfd.getDay()]}, ${Mfd.getDate()}-${months[Mfd.getMonth()]} ${Mfd.getFullYear()}
+        `);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

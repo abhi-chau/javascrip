@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyPin(){
+            var pin = document.getElementById("pin").value;
+            if(pin.trim()=="4564"){
+                document.querySelector("p").innerHTML="";
+            }else{
+                document.querySelector("p").innerHTML="Invalid Pin".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter PIN
+    <input type="text" id="pin" onblur="VerifyPin()">
+    <p></p>
+</body>
+</html>
